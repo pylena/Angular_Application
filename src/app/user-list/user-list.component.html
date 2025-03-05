@@ -1,0 +1,10 @@
+<div class="container mt-3">
+    <div *ngFor="let user of users" class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.name }}</h5>
+        <p class="card-text">Email: {{ user.email }}</p>
+        <p class="card-text">Address: {{ user.address.city }}, {{ user.address.street }}</p>
+        <p class="card-text">Posts: {{ user.postCount }}</p>
+      </div>
+    </div>
+  </div>
